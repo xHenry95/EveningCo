@@ -1,0 +1,17 @@
+:root {}
+
+body {
+  
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+
+  }
+  a:hover {
+
+  }
+  button {
+    
+  }
+}
