@@ -1,0 +1,60 @@
+.usp-container {
+    max-width: 1160px;
+    margin: 70px auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.usp-container h2 {
+    text-align: center;
+}
+
+.usp-card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.usp-card {
+    max-width: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.usp-card img {
+    width: 209px;
+    aspect-ratio: 16 / 9;
+    background: lightgray;
+} 
+
+.usp-card p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+@media (min-width: 477px) and (max-width: 920px) {
+    .usp-card-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
+        place-items: center;
+        align-items: start;
+    }
+}
+
+@media (max-width: 477px) {
+    .usp-card-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

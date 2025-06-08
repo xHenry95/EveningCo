@@ -1,15 +1,17 @@
-import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import ProductShowcase from './components/ProductShowcase'
+import USPCarousel from './components/USPCarousel'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Hero />
-      <ProductShowcase />
+      <div className="page-content-wrapper">
+        <ProductShowcase />
+        <USPCarousel />
+      </div>
     </>
   )
 }

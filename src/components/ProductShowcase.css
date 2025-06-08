@@ -1,12 +1,11 @@
-.showcase-padding {
+/* .showcase-padding {
     padding: 0 20px 0 20px;
-}
+} */
 
 .showcase-container {
-    border: 1px solid red;
-    position: relative;
+    /* position: relative; */
     margin: 40px auto;
-    max-width: 1080px;
+    max-width: 1040px;
     aspect-ratio: 2.45 / 1;
     /* height: 400px; */
     background-size: cover;
@@ -17,10 +16,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding: 30px 40px 30px 40px;
+    padding: 30px 60px 30px 60px;
 }
 
 .showcase-content { 
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -33,4 +33,18 @@ H2 {
     line-height: 130%;
     letter-spacing: 0%;
     /* color: #2E2E2E; */
+}
+
+@media (max-width: 662px) {
+    .showcase-container {
+        padding: 20px;
+    }
+    .showcase-content {
+        flex-direction: column;
+        
+    }
+    .showcase-content h2 {
+        padding: 0;
+        margin: 0;
+    }
 }
